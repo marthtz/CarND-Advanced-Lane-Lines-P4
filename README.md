@@ -33,7 +33,7 @@ The project was cloned from the official P4 repository. I added the following fi
 ####	cameraCal.py
 This scripts runs the camera calibration on the provided calibration images.
 
-Execution is done by just calling .py. All calibration images must be present in the subfolder ‘camera_cal’. 
+Execution is done by just calling cameraCal.py. All calibration images must be present in the subfolder ‘camera_cal’. 
 
 The script saves the parameters used for undistorting images as ‘cam_cal_pickle.p’ in the main folder. An example of an undistorted calibration image is saved to “output_images”
 
