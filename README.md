@@ -15,7 +15,7 @@ The project was cloned from the official P4 repository. I added the following fi
   * project_video_lane_debug.mp4 (plus debug info screen)
   * straight_lines1_lane.jpg & straight_lines2_lane.jpg
   * test1_lane.jpg to test6_lane.jpg
-* In output_images/writeup_images folder(images mentioned in this writeup)
+* In output_images/writeup_images folder (images mentioned in this writeup)
   * ColorSelectionTool.jpg
   * calibration1_undist.jpg
   * straight_lines1_undistorted.jpg
