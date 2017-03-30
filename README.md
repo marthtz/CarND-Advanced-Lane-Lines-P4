@@ -1,3 +1,45 @@
+## Project Code and its Usage
+The code is available on Github: https://github.com/marthtz/CarND-Advanced-Lane-Lines-P4 
+
+The project was cloned from the official P4 repository. I added the following files:
+*	In main folder (Python scripts, calibration data and this writeup)
+  * cameraCal.py (script for camera calibration)
+  * processPipeline.py (script to process images and videos)
+  * cam_cal_pickle.p (saved transformation parameters for camera correction)
+  * Writeup.pdf
+* In output_images folder (processed test images and videos)
+  * project_video_lane.mp4
+  * challenge_video_lane.mp4
+  * harder_challenge_video_lane.mp4
+  * project_video_lane_debug.mp4 (plus debug info screen)
+  * straight_lines1_lane.jpg & straight_lines2_lane.jpg
+  * test1_lane.jpg to test6_lane.jpg
+* In output_images/writeup_images folder(images mentioned in this writeup)
+  * ColorSelectionTool.jpg
+  * calibration1_undist.jpg
+  * straight_lines1_undistorted.jpg
+  * test6_original_thresholded.jpg
+  * straight_lines1_original_lines.jpg
+  * straight_lines1_warped_lines.jpg
+  * straight_lines1_binary_warped.jpg
+  * test2_left_binary_line.jpg
+  * test2_binary_warped.jpg
+  * video_right_binary_line.jpg
+  * test2_lane.jpg
+  * video_debug.jpg
+
+Usage of the Python scripts:
+*	cameraCal.py
+This scripts runs the camera calibration on the provided calibration images. Execution is done by just calling .py. All calibration images must be present in the subfolder ‘camera_cal’. 
+The script saves the parameters used for undistorting images as ‘cam_cal_pickle.p’ in the main folder. An example of an undistorted calibration image is saved to “output_images”
+*	processPipeline.py
+This script runs full lane line detection on the provided images or videos. In addition, debug information can be created. Executing is done by calling the script with input images/videos as parameter. In addition, if the first argument is ‘debug’, additional output is generated.
+Examples:
+  * python processPipeline test_images/image1.jpg test_images/image2.jpg
+  * python processPipeline debug project_video.mp4 challenge_video.mp4
+
+
+
 ## Advanced Lane Finding
 [![Udacity - Self-Driving Car NanoDegree](https://s3.amazonaws.com/udacity-sdc/github/shield-carnd.svg)](http://www.udacity.com/drive)
 
